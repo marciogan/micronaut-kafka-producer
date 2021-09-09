@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: micronautKafkaProducer
+kafka.bootstrap.servers: localhost:9092
+
+dataprovider: scylla
+
+cassandra:
+  default:
+    basic:
+      contact-points:
+        - "localhost:9042"
+      session-keyspace: cdc
+      load-balancing-policy:
+        local-datacenter: datacenter1
+
